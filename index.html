@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOSS KING JAGAN ™</title>
-    <!-- Font Awesome for Telegram Icon -->
+    <!-- FontAwesome Icons ke liye -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            font-family: 'Arial Black', Arial, sans-serif;
         }
 
         body {
-            background-color: #0b0f17;
+            background-color: #0b1017;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,53 +25,47 @@
         }
 
         .card {
-            background-color: #0f172a;
-            border: 1px solid #1e293b;
+            background-color: #111823;
             border-radius: 20px;
             padding: 40px 25px;
             width: 100%;
-            max-width: 480px;
+            max-width: 440px;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #1a2332;
         }
 
         .title {
             font-size: 26px;
             font-weight: 900;
-            letter-spacing: 1.5px;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-        }
-
-        .title span {
-            font-size: 14px;
-            vertical-align: super;
-        }
-
-        .badge-yellow {
-            background-color: #ccff00;
-            color: #000000;
-            font-weight: 900;
-            font-size: 14px;
-            line-height: 1.4;
-            padding: 12px 15px;
-            border-radius: 10px;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-            letter-spacing: 0.5px;
-        }
-
-        .timer-text {
-            color: #94a3b8;
-            font-size: 14px;
-            font-weight: 700;
             letter-spacing: 1px;
             margin-bottom: 25px;
             text-transform: uppercase;
         }
 
+        .highlight-box {
+            background-color: #ccff00;
+            color: #000000;
+            font-size: 13px;
+            font-weight: 900;
+            padding: 12px 15px;
+            border-radius: 8px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .timer-text {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
         .timer-text span {
-            color: #00ff88;
+            color: #00ff66;
         }
 
         .btn-telegram {
@@ -79,81 +73,75 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            background: linear-gradient(180deg, #dc2626 0%, #991b1b 100%);
+            background: linear-gradient(180deg, #d32f2f 0%, #9a0007 100%);
             color: #ffffff;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 900;
             padding: 16px 20px;
             border-radius: 12px;
+            box-shadow: 0 0 15px rgba(211, 47, 47, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border: 1px solid #ef4444;
         }
 
         .btn-telegram:hover {
             transform: translateY(-2px);
-            box-shadow: 0 0 30px rgba(220, 38, 38, 0.8);
+            box-shadow: 0 0 20px rgba(211, 47, 47, 0.7);
         }
 
         .btn-telegram i {
-            font-size: 20px;
+            font-size: 18px;
             background: #ffffff;
-            color: #991b1b;
+            color: #d32f2f;
             border-radius: 50%;
             padding: 4px;
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .disclaimer {
-            margin-top: 30px;
-            font-size: 10px;
-            color: #475569;
-            line-height: 1.5;
+            margin-top: 35px;
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            color: #64748b;
+            line-height: 1.4;
+            font-weight: normal;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1 class="title">TOSS KING JAGAN <span>™</span></h1>
-        
-        <div class="badge-yellow">
+        <h1 class="title">TOSS KING JAGAN ™</h1>
+
+        <div class="highlight-box">
             ACCURATE ANALYSIS • MATCH UPDATE • RIGHT PREDICTION
         </div>
 
         <div class="timer-text">
-            FREE JOINING ENDS IN <span id="countdown">56s</span>
+            FREE JOINING ENDS IN <span id="timer">56s</span>
         </div>
 
-        <!-- Yahan apna Telegram Link dalein -->
-        <a href="YOUR_TELEGRAM_LINK_HERE" class="btn-telegram" target="_blank">
+        <a href="https://t.me/+_qGiVm6u9fkyZWM9" class="btn-telegram" target="_blank">
             JOIN TELEGRAM FOR NEW UPDATE
-            <i class="fa-solid fa-paper-plane"></i>
+            <i class="fa-solid font-awesome fa-paper-plane"></i>
         </a>
 
-        <div class="disclaimer">
+        <p class="disclaimer">
             Disclaimer: This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.
-        </div>
+        </p>
     </div>
 
     <script>
-        // Countdown Timer Logic
-        let seconds = 56;
-        const countdownElement = document.getElementById('countdown');
+        // 60 Second Countdown Timer Script
+        let timeLeft = 56;
+        const timerElement = document.getElementById('timer');
 
-        const timer = setInterval(() => {
-            seconds--;
-            if (seconds <= 0) {
-                seconds = 59; // Loop back or keep at 0s
+        const countdown = setInterval(() => {
+            timeLeft--;
+            if (timeLeft <= 0) {
+                timeLeft = 60; // Loop count or stop as needed
             }
-            countdownElement.textContent = seconds + 's';
+            timerElement.textContent = timeLeft + 's';
         }, 1000);
     </script>
 
