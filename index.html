@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOVINDA BHAI (GAME CHANGER)</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4603441219900697');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4603441219900697&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <!-- Font Awesome for Telegram Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         * {
             box-sizing: border-box;
@@ -133,7 +153,7 @@
             FREE JOINING ENDS IN <span id="countdown">2S</span>
         </div>
 
-        <a href="https://t.me/+jOrXRy9b14M4MGU1" class="cta-button" target="_blank">
+        <a href="https://t.me/+jOrXRy9b14M4MGU1" class="cta-button" target="_blank" id="telegram-link">
             <span>JOIN TELEGRAM FOR NEW UPDATE</span>
             <div class="icon-circle">
                 <i class="fa-solid fa-paper-plane"></i>
@@ -150,7 +170,7 @@
     </div>
 
     <script>
-        // Optional loop timer for urgency effect
+        // Countdown Timer Logic
         let seconds = 2;
         const countdownEl = document.getElementById('countdown');
 
